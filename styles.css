@@ -1,0 +1,159 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+    padding: 20px;
+}
+
+/* Container Styles */
+.text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form {
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #2a9d8f;
+    margin-bottom: 10px;
+}
+
+#description {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Label Styles */
+label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+}
+
+/* Input and Textarea Styles */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #2a9d8f;
+    outline: none;
+}
+
+/* Radio Button and Checkbox Styles */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Button Styles */
+input[type="submit"] {
+    background-color: #2a9d8f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #21867a;
+}
+
+/* Form Sections */
+h2 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+select {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 2px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+textarea {
+    resize: vertical;
+}
+
+@media (max-width: 768px) {
+    .form {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    input[type="submit"] {
+        font-size: 1rem;
+    }
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.text, .form {
+    width: 100%;
+    max-width: 600px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.form {
+    max-height: 90vh;
+    overflow-y: auto;
+}
